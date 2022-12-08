@@ -1,0 +1,376 @@
+
+#test {
+    background-color: black;
+}
+
+#footer {
+    background-color: #333;
+    color: white;
+    padding: 30px;
+}
+
+.spacelah{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.head-cover {
+    background-image: "/picts/cover.png";
+}
+
+/* [1] The container */
+.img-hover-zoom {
+    height: 300px;
+    /* [1.1] Set it as per your need */
+    overflow: hidden;
+    /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+    transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+    transform: scale(1.5);
+}
+
+.isi {
+    /* margin-top: 5%; */
+    /* margin-bottom: 10%; */
+    /* padding-top: 5%; */
+    padding-bottom: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+
+.status {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.card-cover {
+    width: auto;
+    height: 200px;
+}
+
+.rounded-custom {
+    display: block;
+    border-radius: 30px;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    /* font-size: 70%; */
+}
+
+.isi-konten {
+    /* padding-left: 5%; */
+    /*     padding-left: 10px;
+    border-left: 2px solid rgba(96,250,255,1); */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.isi-konten-samples {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    /*     border-left: 2px solid rgba(96,250,255,1);
+    border-right: 2px solid rgba(96,250,255,1); */
+}
+
+.isi-header {}
+
+
+.testimonial-group {
+    margin: 2% 0 2% 0;
+}
+
+.testimonial-group>.row {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.testimonial-group>.row>.col-xs-4 {
+    display: inline-block;
+    float: none;
+}
+
+/*   .col-xs-4 { color: #fff; font-size: 48px; padding-bottom: 20px; padding-top: 18px; }
+.col-xs-4:nth-child(3n+1) { background: #c69; }
+.col-xs-4:nth-child(3n+2) { background: #9c6; }
+.col-xs-4:nth-child(3n+3) { background: #69c; } */
+.crop {
+    height: auto;
+    width: 400px;
+    /* overflow: hidden; */
+}
+.Commission{
+    height: auto;
+    width: 300px;
+}
+
+.Chibi {
+    height: 100px;
+    width: auto;
+}
+
+.Waist-Up {
+    height: 200px;
+    width: auto;
+}
+
+.Head-Up {
+    height: 100px;
+    width: auto;
+}
+
+.Half-Body {
+    height: 200px;
+    width: auto;
+}
+
+.Full-Body {
+    height: 400px;
+    width: auto;
+}
+
+/* .crop img {
+    height: 100px;
+    width: auto;
+} */
+
+
+
+.pricing-parallax {
+    background-image: url("picts/UI/optimized_pricing-parallax.jpg");
+}
+
+.samples-parallax {
+    background-image: url("picts/bust-up/4.png");
+    height: 500px;
+}
+.android-parallax {
+    background-image: url("picts/porto/android-header.png");
+    height: 500px;
+}
+.game-parallax {
+    background-image: url("picts/porto/game-header.png");
+    height: 500px;
+}
+.web-parallax {
+    background-image: url("picts/porto/web-header.png");
+    height: 500px;
+}
+
+.parallax {
+    /* The image used */
+    /* background-image: url("picts/bust-up/4.png"); */
+
+    /* Set a specific height */
+    /* height: 500px;  */
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ui {
+    position: relative;
+    overflow: hidden;
+}
+
+.zoom-hover {
+
+    overflow: hidden;
+}
+
+.zoom-hover img {
+    transition: transform .5s ease;
+}
+
+.zoom-hover img:hover {
+    transform: scale(1.5);
+}
+
+#overlay {
+    position: absolute;
+    /*     display: none; */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.closed{
+    opacity: 0.3;
+}
+
+#text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.floating-alice {
+    display: none;
+    position: fixed;
+    z-index: 0;
+    top: 75%;
+    left: 90%;
+    margin-top: -100px;
+    margin-left: -100px;
+    transform: scaleX(-1);
+}
+
+.note {
+    font-size: 0.8rem;
+}
+
+
+/*   Bootstrap 4 breakpoints  */
+
+
+@media(min-width: 300px) {}
+
+@media(max-width: 400px) {
+    .floating-alice {
+        width: 10%;
+        height: 10%;
+    }
+}
+
+.contact a {
+    color: white;
+}
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {
+
+    /*   h1 {font-size:1.5rem;} 
+  h2 {font-size:1.5rem;}
+  h3 {font-size:1.5rem;}
+  h4 {font-size:1.5rem;}
+  h5 {font-size:1.5rem;}
+  h6 {font-size:1.5rem;} */
+}
+
+
+
+
+@media (max-width: 646px) {
+    .isi{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    #status.isi{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .pricing .isi{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .samples .isi{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    #text .welcome1{
+        font-size: 24px;
+    }
+    #text .welcome2{
+        font-size: 15px;
+    }
+
+    /*   h1 {font-size:1.5rem;} 
+  h2 {font-size:1.5rem;}
+  h3 {font-size:1.5rem;}
+  h4 {font-size:1.5rem;}
+  h5 {font-size:1.5rem;}
+  h6 {font-size:1.5rem;} */
+}
+
+
+@media (max-width: 386px){
+    #text .welcome1{
+        font-size: 16px;
+    }
+    #text .welcome2{
+        font-size: 13px;
+    }
+}
+
+/* @media (max-width: 380px) {
+
+    #text .welcome1{
+        font-size: 17px;
+    }
+    #text .welcome2{
+        font-size: 12px;
+    }
+} */
+
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+
+    /*   h1 {font-size:2rem;} 
+  h2 {font-size:2rem;}
+  h3 {font-size:2rem;}
+  h4 {font-size:2rem;}
+  h5 {font-size:2rem;}
+  h6 {font-size:2rem;} */
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    /*   h1 {font-size:2.5rem;} 
+  h2 {font-size:2.5rem;} 
+  h3 {font-size:2.5rem;} 
+  h4 {font-size:2.5rem;} 
+  h5 {font-size:2.5rem;} 
+  h6 {font-size:2.5rem;}  */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    /*   h1 {font-size:3rem;}  
+  h2 {font-size:3rem;}
+  h3 {font-size:3rem;}
+  h4 {font-size:3rem;}
+  h5 {font-size:3rem;}
+  h6 {font-size:3rem;}  */
+
+}
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+
+/* Set width to make card deck cards 100% width */
+@media (min-width: 950px) and (max-width:1100px) {
+    /*     h1 {
+        font-size: 2.75rem;
+        color: red;
+    } */
+}
