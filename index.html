@@ -1,34 +1,43 @@
- <!DOCTYPE html>
- <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portfolio Yudha</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <title>Portfolio Yudha</title>
-     <!-- Latest compiled and minified CSS -->
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-     <!-- Latest compiled JavaScript -->
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-     <!-- jQuery library -->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-     <!-- Popper JS -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="app.css" />
+    <link rel="stylesheet" type="text/css" href="custom.css" />
 
-     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-     <link rel="stylesheet" type="text/css" href="app.css">
-     <link rel="stylesheet" type="text/css" href="custom.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Nunito"
+    />
+    <link rel="icon" href="picts/favicon.jpg" type="image/ico" />
+  </head>
 
-     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
-     <link rel="icon" href="picts/favicon.jpg" type="image/ico" />
- </head>
-
-
-
- <body>
-     <!-- navbar -->
-     <!-- welcome -->
-     <!-- <div class="navbar navbar-dark bg-dark shadow-sm">
+  <body>
+    <!-- navbar -->
+    <!-- welcome -->
+    <!-- <div class="navbar navbar-dark bg-dark shadow-sm">
          <div class="container d-flex justify-content-between">
              <a href="#" class="navbar-brand d-flex align-items-center">
                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2" viewBox="0 0 24 24" focusable="false">
@@ -44,172 +53,271 @@
          </div>
      </div> -->
 
-     <!-- welcome -->
+    <!-- welcome -->
 
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v4.0",
+        });
+      };
 
-     <!-- Load Facebook SDK for JavaScript -->
-     <div id="fb-root"></div>
-     <script>
-         window.fbAsyncInit = function() {
-             FB.init({
-                 xfbml: true,
-                 version: 'v4.0'
-             });
-         };
-
-         (function(d, s, id) {
-             var js, fjs = d.getElementsByTagName(s)[0];
-             if (d.getElementById(id)) return;
-             js = d.createElement(s);
-             js.id = id;
-             js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-             fjs.parentNode.insertBefore(js, fjs);
-         }(document, 'script', 'facebook-jssdk'));
-     </script>
-
-     <!-- Your customer chat code -->
-     <div class="fb-customerchat" attribution=setup_tool page_id="521190575003324">
-     </div>
-
-
-     <!-- Jumbotron -->
-
-     <header class="head-cover">
-         <div class="" style=""><img class="img-fluid floating-alice" src="..picts/floating.png" height="200px" width="200px" alt=""></div>
-
-         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-             <div class="carousel-inner">
-                 <div class="carousel-item active">
-                     <img class="d-block w-100" style="padding-top : -100px;" src="picts/porto/head.png" alt="First slide">
-                     <div id="overlay">
-                         <div id="text" class="text-center">
-                             <h1 class="welcome1">Welcome to My Portfolio Page</h1>
-                             <h5 class="welcome2">Please Feel Free to Look Around</h5>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </header>
-
-     <div style="margin-top: 25%; margin-bottom: 25%" class="center">
-         <h1>
-             <center>Here is the projects that I was working on.</center>
-         </h1>
-     </div>
-
-     <!-- parallax -->
-     <div class="parallax android-parallax">
-         <div class="col" style="height:100%">
-             <div id="overlay">
-
-                 <div id="text">
-                     <h1 class="pl-2 pr-2" style="border-left: 2px solid white; border-right: 2px solid white;" id="">Android
-                     </h1>
-
-                 </div>
-             </div>
-
-
-         </div>
-     </div>
-
-     <!-- parallax -->
-
-
-
-     <!-- Samples -->
-     <div class="container spacelah">
-         <div class="row" style="vertical-align: middle;">
-         <div class="col-md-6">
-                 <div class="thumbnail">
-                     <a href="picts/porto/android/gamedb.jpg">
-                         <img src="picts/porto/android/gamedb.jpg" alt="Lights" style="width:100%">
-                         <div class="caption">
-                             <p><center>Gamedb - Gaming News and List(In Development)</center></p>
-                         </div>
-                     </a>
-                 </div>
-             </div>
-             <div class="col-md-6">
-                 <div class="thumbnail">
-                     <a href="picts/porto/android/goalkes.jpg">
-                         <img src="picts/porto/android/goalkes.jpg" alt="Lights" style="width:100%">
-                         <div class="caption">
-                             <p><center>Goalkes - Marketplace Alat Kesehatan Indonesia</center></p>
-                         </div>
-                     </a>
-                 </div>
-             </div>
-             <div class="col-md-4">
-                 <div class="thumbnail">
-                     <a href="picts/porto/android/linebot.png">
-                         <img src="picts/porto/android/linebot.png" alt="Lights" style="width:100%">
-                         <div class="caption">
-                             <p><center>LINE Bot - Toko game</center></p>
-                         </div>
-                     </a>
-                 </div>
-             </div>
-             <div class="col-md-4">
-                 <div class="thumbnail">
-                     <a href="picts/porto/android/contact-managing.png">
-                         <img src="picts/porto/android/contact-managing.png" alt="Fjords" style="width:100%">
-                         <div class="caption">
-                             <p><center>Contact Managing App</center></p>
-                         </div>
-                     </a>
-                 </div>
-             </div>
-             <div class="col-md-4">
-                 <div class="thumbnail">
-                     <a href="picts/porto/android/ar-app.png">
-                         <img src="picts/porto/android/ar-app.png" alt="Fjords" style="width:100%">
-                         <div class="caption">
-                             <p><center>AR App</center></p>
-                         </div>
-                     </a>
-                 </div>
-             </div>
-             <div class="col-md-4">
-                 <div class="thumbnail">
-                     <a href="picts/porto/android/liff.png">
-                         <img src="picts/porto/android/liff.png" alt="Nature" style="width:100%">
-                         <div class="caption">
-                             <p><center>LINE Frontend Framework - Toko Game</center></p>
-                         </div>
-                     </a>
-                 </div>
-             </div>
-         </div>
-     </div>
-
-     <script>
-        const android = [
-            ["Gamedb - Gaming News and List", "Gamedb merupakan aplikasi mobile Android yang bertujuan untuk melisting game-game yang sedang trending. Sehingga gamer dapat dengan mudah untuk menentukan game selanjutnya yang akan mereka main. tidak hanya itu aplikasi ini juga dapat mengkategorikan game berdasarkan genrenya dan mengurutkannya sesuai dengan tingkat kepopulerannya, terlebih aplikasi ini juga dapat meredirect penggunanya ke tempat store gamenya untuk dibeli seperti platform Steam. Pada tahap pengembangannya, aplikasi ini menggunakan API dari RAWG untuk mendapatkan data dari gamenya. Dan untuk pengembangan kedepan juga, aplikasi dapat membuat fitur bookmark games berdasarkan usernya"],
-            ["Goalkes - Marketplace Alat Kesehatan Indonesia.", "Goalkes merupakan sebuah plaform market place untuk berjualan alat kesehatan, dimana terdapat pembeli dan penjual yang diatur oleh sistem untuk berinteraksi dan melakukan jual beli. Goalkes merupakan sistem yang kompleks dimana melibatkan berbagai API dalam proses sistemnya seperti API Raja Ongkir untuk penentuan biaya pengiriman barang dan API Midtrans untuk proses banking jual beli barangnya."],
-            ["LINE Bot - Toko Game", "LINE bot merupakan sebuah bot yang terdapat di dalam LINE Messenger yang mana berfungsi untuk mela	kukan sebuah aksi tertentu sesuai dengan masukan pengguna. Pada project ini, mengimplementasikan bot 	yang dapat berinteraksi dengan pengguna untuk mendapatkan produk-produk yang ada di aplikasi web toko 	games ke dalam LINE Messenger. Tujuan dari LINE Bot ialah agar pengguna tidak perlu repot-repot untuk 	berganti aplikasi untuk melakukan fungsi-fungsi yang diinginkan sehingga lebih efisien waktu."],
-            ["LINE Frontend Framework(LIFF) - Toko Game", "LIFF merupakan sebuah framework yang dikembangkan oleh LINE yang berfungsi agar frontend web yang kita kembangkan dapat di-load/ditampilkan di dalam LINE Messenger. Pada Project ini, Toko game dikembangkan lebih lanjut dengan menambahkan fitur LIFF ke dalam frontend-nya."],
-            ["Contact Managing Apps", "Merupakan sebuah project sederhana yang mana aplikasi ini digunakan untuk mencatat kontak dari mahasiswa ke dalam SQLite."],
-            ["AR App", "Aplikasi ini menerapkan Augment Reality(AR) ke dalam aplikasi dengan menggunakan Vuforia(atau AR Tool kit yang merupakan SDK Android)yang ada pada game engine Unity3D. Pada project ini AR digunakan untuk memasukan sebuah object 3D dan dipetakan baik dengan menggunakan GPS (seperti Pokemon GO) ataupun dengan menggunakan sebuah marker AR."]
-     ]
-
-        const web = [
-            ["Salesman","Salesman merupakan aplikasi berbasis web yang berfungsi sebagai planning sales dan report salesman. Project ini menggunakan PHP from scratch dan MySQL sebagai databasenya. Selain itu salesman juga dapat memuat data masukan dari sales dan menampilkannya kedalam grafik chart yang kemudian dapat diekspor ke dalam bentuk excel(csv)."],
-            ["Malang Gaming Community", "Merupakan sebuah aplikasi yang ditujukan untuk komunitas penggemar game yang ada di malang. Project ini dibangun dengan menggunakan PHP from scratch, dan dengan menggunakan MySQL sebagai databasenya. aplikasi web ini berperan sebagai library untuk game-game yang telah rilis dan komunitas game malang dapat mereview game-game tersebut."],
-            ["Toko Game", "Toko Game merupakan aplikasi web yang mana menangani penjualan game. Project ini menggunakan javascript untuk generate ui-nya. aplikasi ini juga menggunakan fitur LIFF oleh LINE agar tampilan web dapat dimuat ke dalam LINE messaging. Sistem autentikasi akan otomatis terlogin jika membuka LIFF dari aplikasi LINE sedangkan jika dibuka melalui browser, pengguna diharuskan login terlebih dahulu."],
-            ["Fluttery Reborn", "Fluttery merupakan platform berbasis web untuk men-deploy project berbasis Flutter kedalam 2 platform, Web dan Android.  Pada platform mobile Android, hasil deploy berupa file .apk yang selanjutnya bisa diinstall pada perangkat keras berbasis Android sementara pada platform Web berupa CSS, HTML, dan JS. Dalam Fluttery, kita bisa melihat status build dan hasil build yang berupa .apk maupun link untuk mengakses hasil build pada platform web. Proses pembangunan Fluttery terbagi menjadi 2 yaitu pembangunan sistem webnya yang menggunakan VueJS sebagai frontend dan Amazon Web Service(AWS) sebagai back-end servernya. Proses pendeployan prokect flutter diautomasi oleh mesin-mesin virtual yang ada di AWS."]
-     ]
-     const game = [
-            ["Guitar VR-Myo Learn", "Merupakan sebuah permainan edukasi yang mengajarkan chord dasar kepada pemainnya. dengan menggunakan Virtual Reality, pemain akan merasakan seolah-olah berada di dalam dunia game tersebut. Ditambah dengan sebuah alat sensor otot Myo Armband yang mana merupakan media input  pemain untuk berinteraksi dengan lingkungan di dalam game, membuat game se-immersive mungkin sehingga memotivasi pemain untuk bermain sekaligus belajar. pembelajaran menjadi lebih menarik dan pemain pun akan termotivasi untuk belajar dan bermain. Permainan edukasi ini dibangun dengan mengunakan bahasa C# dan Unity3D engine sebagai engine untuk membangun system pembelajarannya."],
-            ["Sabilman", "Sabilman merupakan sebuah proyek game sederhana from scrath (membuat game enginenya sendiri) dengan menggunakan C++ sebagai bahasa pemogramannya. pada implementasinya, sabilman menggunakan SDL dan OpenGl yang merupakan sebuah window manager dan graphic API. Aturan permainan sabilman hampir mirip dengan pacman, hanya saja akan terdapat beberapa mode yang nantinya akan berganti sejalan selama pemain telah mengambil semua “ice cream” pada stage tertentu."]
-     ]
-
-        
-
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
     </script>
 
-     <?php
+    <!-- Your customer chat code -->
+    <div
+      class="fb-customerchat"
+      attribution="setup_tool"
+      page_id="521190575003324"
+    ></div>
+
+    <!-- Jumbotron -->
+
+    <header class="head-cover">
+      <div class="" style="">
+        <img
+          class="img-fluid floating-alice"
+          src="..picts/floating.png"
+          height="200px"
+          width="200px"
+          alt=""
+        />
+      </div>
+
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-100"
+              style="padding-top: -100px"
+              src="picts/porto/head.png"
+              alt="First slide"
+            />
+            <div id="overlay">
+              <div id="text" class="text-center">
+                <h1 class="welcome1">Welcome to My Portfolio Page</h1>
+                <h5 class="welcome2">Please Feel Free to Look Around</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div style="margin-top: 25%; margin-bottom: 25%" class="center">
+      <h1>
+        <center>Here is the projects that I was working on.</center>
+      </h1>
+    </div>
+
+    <!-- parallax -->
+    <div class="parallax android-parallax">
+      <div class="col" style="height: 100%">
+        <div id="overlay">
+          <div id="text">
+            <h1
+              class="pl-2 pr-2"
+              style="
+                border-left: 2px solid white;
+                border-right: 2px solid white;
+              "
+              id=""
+            >
+              Android
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- parallax -->
+
+    <!-- Samples -->
+    <div class="container spacelah">
+      <div class="row" style="vertical-align: middle">
+        <div class="col-md-6">
+          <div class="thumbnail">
+            <a href="picts/porto/android/gamedb.jpg">
+              <img
+                src="picts/porto/android/gamedb.jpg"
+                alt="Lights"
+                style="width: 100%"
+              />
+              <div class="caption">
+                <p>
+                  <center>Gamedb - Gaming News and List(In Development)</center>
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="thumbnail">
+            <a href="picts/porto/android/goalkes.jpg">
+              <img
+                src="picts/porto/android/goalkes.jpg"
+                alt="Lights"
+                style="width: 100%"
+              />
+              <div class="caption">
+                <p>
+                  <center>
+                    Goalkes - Marketplace Alat Kesehatan Indonesia
+                  </center>
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="picts/porto/android/linebot.png">
+              <img
+                src="picts/porto/android/linebot.png"
+                alt="Lights"
+                style="width: 100%"
+              />
+              <div class="caption">
+                <p><center>LINE Bot - Toko game</center></p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="picts/porto/android/contact-managing.png">
+              <img
+                src="picts/porto/android/contact-managing.png"
+                alt="Fjords"
+                style="width: 100%"
+              />
+              <div class="caption">
+                <p><center>Contact Managing App</center></p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="picts/porto/android/ar-app.png">
+              <img
+                src="picts/porto/android/ar-app.png"
+                alt="Fjords"
+                style="width: 100%"
+              />
+              <div class="caption">
+                <p><center>AR App</center></p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="picts/porto/android/liff.png">
+              <img
+                src="picts/porto/android/liff.png"
+                alt="Nature"
+                style="width: 100%"
+              />
+              <div class="caption">
+                <p><center>LINE Frontend Framework - Toko Game</center></p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const android = [
+        [
+          "Gamedb - Gaming News and List",
+          "Gamedb merupakan aplikasi mobile Android yang bertujuan untuk melisting game-game yang sedang trending. Sehingga gamer dapat dengan mudah untuk menentukan game selanjutnya yang akan mereka main. tidak hanya itu aplikasi ini juga dapat mengkategorikan game berdasarkan genrenya dan mengurutkannya sesuai dengan tingkat kepopulerannya, terlebih aplikasi ini juga dapat meredirect penggunanya ke tempat store gamenya untuk dibeli seperti platform Steam. Pada tahap pengembangannya, aplikasi ini menggunakan API dari RAWG untuk mendapatkan data dari gamenya. Dan untuk pengembangan kedepan juga, aplikasi dapat membuat fitur bookmark games berdasarkan usernya",
+        ],
+        [
+          "Goalkes - Marketplace Alat Kesehatan Indonesia.",
+          "Goalkes merupakan sebuah plaform market place untuk berjualan alat kesehatan, dimana terdapat pembeli dan penjual yang diatur oleh sistem untuk berinteraksi dan melakukan jual beli. Goalkes merupakan sistem yang kompleks dimana melibatkan berbagai API dalam proses sistemnya seperti API Raja Ongkir untuk penentuan biaya pengiriman barang dan API Midtrans untuk proses banking jual beli barangnya.",
+        ],
+        [
+          "LINE Bot - Toko Game",
+          "LINE bot merupakan sebuah bot yang terdapat di dalam LINE Messenger yang mana berfungsi untuk mela	kukan sebuah aksi tertentu sesuai dengan masukan pengguna. Pada project ini, mengimplementasikan bot 	yang dapat berinteraksi dengan pengguna untuk mendapatkan produk-produk yang ada di aplikasi web toko 	games ke dalam LINE Messenger. Tujuan dari LINE Bot ialah agar pengguna tidak perlu repot-repot untuk 	berganti aplikasi untuk melakukan fungsi-fungsi yang diinginkan sehingga lebih efisien waktu.",
+        ],
+        [
+          "LINE Frontend Framework(LIFF) - Toko Game",
+          "LIFF merupakan sebuah framework yang dikembangkan oleh LINE yang berfungsi agar frontend web yang kita kembangkan dapat di-load/ditampilkan di dalam LINE Messenger. Pada Project ini, Toko game dikembangkan lebih lanjut dengan menambahkan fitur LIFF ke dalam frontend-nya.",
+        ],
+        [
+          "Contact Managing Apps",
+          "Merupakan sebuah project sederhana yang mana aplikasi ini digunakan untuk mencatat kontak dari mahasiswa ke dalam SQLite.",
+        ],
+        [
+          "AR App",
+          "Aplikasi ini menerapkan Augment Reality(AR) ke dalam aplikasi dengan menggunakan Vuforia(atau AR Tool kit yang merupakan SDK Android)yang ada pada game engine Unity3D. Pada project ini AR digunakan untuk memasukan sebuah object 3D dan dipetakan baik dengan menggunakan GPS (seperti Pokemon GO) ataupun dengan menggunakan sebuah marker AR.",
+        ],
+      ];
+
+      const web = [
+        [
+          "Salesman",
+          "Salesman merupakan aplikasi berbasis web yang berfungsi sebagai planning sales dan report salesman. Project ini menggunakan PHP from scratch dan MySQL sebagai databasenya. Selain itu salesman juga dapat memuat data masukan dari sales dan menampilkannya kedalam grafik chart yang kemudian dapat diekspor ke dalam bentuk excel(csv).",
+        ],
+        [
+          "Malang Gaming Community",
+          "Merupakan sebuah aplikasi yang ditujukan untuk komunitas penggemar game yang ada di malang. Project ini dibangun dengan menggunakan PHP from scratch, dan dengan menggunakan MySQL sebagai databasenya. aplikasi web ini berperan sebagai library untuk game-game yang telah rilis dan komunitas game malang dapat mereview game-game tersebut.",
+        ],
+        [
+          "Toko Game",
+          "Toko Game merupakan aplikasi web yang mana menangani penjualan game. Project ini menggunakan javascript untuk generate ui-nya. aplikasi ini juga menggunakan fitur LIFF oleh LINE agar tampilan web dapat dimuat ke dalam LINE messaging. Sistem autentikasi akan otomatis terlogin jika membuka LIFF dari aplikasi LINE sedangkan jika dibuka melalui browser, pengguna diharuskan login terlebih dahulu.",
+        ],
+        [
+          "Fluttery Reborn",
+          "Fluttery merupakan platform berbasis web untuk men-deploy project berbasis Flutter kedalam 2 platform, Web dan Android.  Pada platform mobile Android, hasil deploy berupa file .apk yang selanjutnya bisa diinstall pada perangkat keras berbasis Android sementara pada platform Web berupa CSS, HTML, dan JS. Dalam Fluttery, kita bisa melihat status build dan hasil build yang berupa .apk maupun link untuk mengakses hasil build pada platform web. Proses pembangunan Fluttery terbagi menjadi 2 yaitu pembangunan sistem webnya yang menggunakan VueJS sebagai frontend dan Amazon Web Service(AWS) sebagai back-end servernya. Proses pendeployan prokect flutter diautomasi oleh mesin-mesin virtual yang ada di AWS.",
+        ],
+        [
+          "RFID Helm Detection",
+          "Merupakan frontend web untuk program Python yang mana dapat meng-scan kartu RFID dan juga mendeteksi Helm keselamatan(pengenalan citra gambar). Sistem ini mencatat dan memanage kondisi dimana pekerja telah memakai helm keselamatan atau tidak sebelum ia memasuki area bekerja.",
+        ],
+      ];
+      const game = [
+        [
+          "Guitar VR-Myo Learn",
+          "Merupakan sebuah permainan edukasi yang mengajarkan chord dasar kepada pemainnya. dengan menggunakan Virtual Reality, pemain akan merasakan seolah-olah berada di dalam dunia game tersebut. Ditambah dengan sebuah alat sensor otot Myo Armband yang mana merupakan media input  pemain untuk berinteraksi dengan lingkungan di dalam game, membuat game se-immersive mungkin sehingga memotivasi pemain untuk bermain sekaligus belajar. pembelajaran menjadi lebih menarik dan pemain pun akan termotivasi untuk belajar dan bermain. Permainan edukasi ini dibangun dengan mengunakan bahasa C# dan Unity3D engine sebagai engine untuk membangun system pembelajarannya.",
+        ],
+        [
+          "Sabilman",
+          "Sabilman merupakan sebuah proyek game sederhana from scrath (membuat game enginenya sendiri) dengan menggunakan C++ sebagai bahasa pemogramannya. pada implementasinya, sabilman menggunakan SDL dan OpenGl yang merupakan sebuah window manager dan graphic API. Aturan permainan sabilman hampir mirip dengan pacman, hanya saja akan terdapat beberapa mode yang nantinya akan berganti sejalan selama pemain telah mengambil semua “ice cream” pada stage tertentu.",
+        ],
+      ];
+
+      const microcontroller = [
+        [
+            "RFID and Helm Detection",
+            "Software ini dibangun dengan menggunakan ESP32 microcontroller dengan sensor pembaca RFID untuk scan kartunya, lalu dengan bahasa pemograman Python sebagai pemrosesan datanya serta pendeteksian helm(menggunakan library YOLOv8) berdasarkan gambar yang distream melalui kamera. Sistem ini terintegrasi dengan Frontend Vuejs dengan cara menyediakan API dengan menggunakan Python Flask dan MysqlAlchemy yang dapat diakses oleh frontend, serta websocket sebagai sarana stream kamera dari pythonnya ke web."
+        ],
+        [
+            "MPPT Solar Cell",
+            "System ini merupakan system untuk controller panel surya dimana sistem ini dapat menjaga dan mengoptimize efisiensi pengisian panel surya ke baterai agar maksimal. sistem ini dapat menaikkan dan menurunkan tegangan ke baterai sesuai dengan kondisi solar panelnya. dengan menggunakan ANFIS, yaitu sebuah perhitungan komputasi cerdas dimana yang dapat menentukan kapan voltase harus dinaikan atau diturunkan. serta sistem dapat otomatis memutuskan arus dari baterai ketika baterai sudah penuh."
+        ]
+      ];
+    </script>
+
+    <?php
 
         $android = array(
             array("Gamedb - Gaming News and List", "Gamedb merupakan aplikasi mobile Android yang bertujuan untuk melisting game-game yang sedang trending. Sehingga gamer dapat dengan mudah untuk menentukan game selanjutnya yang akan mereka main. tidak hanya itu aplikasi ini juga dapat mengkategorikan game berdasarkan genrenya dan mengurutkannya sesuai dengan tingkat kepopulerannya, terlebih aplikasi ini juga dapat meredirect penggunanya ke tempat store gamenya untuk dibeli seperti platform Steam. Pada tahap pengembangannya, aplikasi ini menggunakan API dari RAWG untuk mendapatkan data dari gamenya. Dan untuk pengembangan kedepan juga, aplikasi dapat membuat fitur bookmark games berdasarkan usernya"),
@@ -239,221 +347,336 @@
 
         $prefixHeading = "heading";
         $prefixCollapse = "collapse"; ?>
-     <div class="samples" id="samples">
-         <div class="isi" class="">
-             <div class="isi-header">
-                 <div class="isi-konten-samples"></div>
-                 <script>
-                    android.forEach(printDOM)
+    <div class="samples" id="samples">
+      <div class="isi" class="">
+        <div class="isi-header">
+          <div class="isi-konten-samples"></div>
+          <script>
+            android.forEach(printDOM);
 
-                    function printDOM(item) {
-                        document.write('<div><h4>'+item[0]+'</h4></div>')
-                        document.write('<div class="container testimonial-group">')
-                            document.write('<p>'+item[1]+'</p>'+
-                            '<div class="row text-center">'+
-                             '<div class="col crop mt-3 mb-3">'+
-                             '</div>'+
-                            '</div>')
-                        document.write('</div>')
+            function printDOM(item) {
+              document.write("<div><h4>" + item[0] + "</h4></div>");
+              document.write('<div class="container testimonial-group">');
+              document.write(
+                "<p>" +
+                  item[1] +
+                  "</p>" +
+                  '<div class="row text-center">' +
+                  '<div class="col crop mt-3 mb-3">' +
+                  "</div>" +
+                  "</div>"
+              );
+              document.write("</div>");
+            }
+          </script>
+          <?php foreach ($android as $sample) { ?>
 
-                    }
-                 </script>
-                 <?php foreach ($android as $sample) { ?>
-
-                     <div>
-                         <h4>
-                             <?php
+          <div>
+            <h4>
+              <?php
                                 echo $sample[0]; ?>
-                         </h4>
-                     </div>
+            </h4>
+          </div>
 
-                     <div class="container testimonial-group">
-                     <p><?php echo $sample[1] ?></p>
-                         <div class="row text-center">
-                             <div class="col crop mt-3 mb-3">
-                             </div>
-                         </div>
-                     </div>
+          <div class="container testimonial-group">
+            <p><?php echo $sample[1] ?></p>
+            <div class="row text-center">
+              <div class="col crop mt-3 mb-3"></div>
+            </div>
+          </div>
 
-                 <?php }
+          <?php }
 
                     ?>
+        </div>
+      </div>
+    </div>
+    <!-- Samples -->
 
-             </div>
-         </div>
-     </div>
-     <!-- Samples -->
+    <!-- parallax -->
+    <div class="parallax web-parallax">
+      <div class="col" style="height: 100%">
+        <div id="overlay">
+          <div id="text">
+            <h1
+              class="pl-2 pr-2"
+              style="
+                border-left: 2px solid white;
+                border-right: 2px solid white;
+              "
+              id=""
+            >
+              Web
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
 
-     <!-- parallax -->
-     <div class="parallax web-parallax">
-         <div class="col" style="height:100%">
-             <div id="overlay">
+    <!-- parallax -->
+    <div class="container spacelah">
+      <div class="row" style="vertical-align: middle">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="picts/porto/web/salesman.jpg">
+              <img
+                src="picts/porto/web/salesman.jpg"
+                alt="Lights"
+                style="width: 100%"
+              />
+              <div class="caption">
+                <p><center>Salesman</center></p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="picts/porto/web/tokogames.jpg">
+              <img
+                src="picts/porto/web/tokogames.jpg"
+                alt="Nature"
+                style="width: 100%"
+              />
+              <div class="caption">
+                <p><center>Toko Game</center></p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="picts/porto/web/flutter.jpg">
+              <img
+                src="picts/porto/web/flutter.jpg"
+                alt="Nature"
+                style="width: 100%"
+              />
+              <div class="caption">
+                <p><center>Fluttery Reborn</center></p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+            <div class="thumbnail">
+              <a href="picts/porto/web/RFIDHelmDetection.png">
+                <img
+                  src="picts/porto/web/RFIDHelmDetection.png"
+                  alt="Nature"
+                  style="width: 100%"
+                />
+                <div class="caption">
+                  <p><center>RFID Helm Detection</center></p>
+                </div>
+              </a>
+            </div>
+          </div>
+      </div>
+    </div>
 
-                 <div id="text">
-                     <h1 class="pl-2 pr-2" style="border-left: 2px solid white; border-right: 2px solid white;" id="">Web
-                     </h1>
+    <div class="samples" id="samples">
+      <div class="isi" class="">
+        <div class="isi-header">
+          <div class="isi-konten-samples"></div>
+          <script>
+            web.forEach(printDOM);
+          </script>
+          <?php foreach ($web as $sample) { ?>
 
-                 </div>
-             </div>
-
-
-         </div>
-     </div>
-
-     <!-- parallax -->
-     <div class="container spacelah">
-         <div class="row" style="vertical-align: middle;">
-             <div class="col-md-4">
-                 <div class="thumbnail">
-                     <a href="picts/porto/web/salesman.jpg">
-                         <img src="picts/porto/web/salesman.jpg" alt="Lights" style="width:100%">
-                         <div class="caption">
-                             <p><center>Salesman</center></p>
-                         </div>
-                     </a>
-                 </div>
-             </div>
-             <div class="col-md-4">
-                 <div class="thumbnail">
-                     <a href="picts/porto/web/tokogames.jpg">
-                         <img src="picts/porto/web/tokogames.jpg" alt="Nature" style="width:100%">
-                         <div class="caption">
-                             <p><center>Toko Game</center></p>
-                         </div>
-                     </a>
-                 </div>
-             </div>
-             <div class="col-md-4">
-                 <div class="thumbnail">
-                     <a href="picts/porto/web/flutter.jpg">
-                         <img src="picts/porto/web/flutter.jpg" alt="Nature" style="width:100%">
-                         <div class="caption">
-                             <p><center>Fluttery Reborn</center></p>
-                         </div>
-                     </a>
-                 </div>
-             </div>
-         </div>
-     </div>
-
-
-
-     <div class="samples" id="samples">
-         <div class="isi" class="">
-             <div class="isi-header">
-                 <div class="isi-konten-samples"></div>
-                 <script>
-                    web.forEach(printDOM)
-                 </script>
-                 <?php foreach ($web as $sample) { ?>
-
-                     <div>
-                         <h4>
-                             <?php
+          <div>
+            <h4>
+              <?php
                                 echo $sample[0]; ?>
-                         </h4>
-                     </div>
+            </h4>
+          </div>
 
-                     <div class="container testimonial-group">
-                     <p><?php echo $sample[1] ?></p>
-                         <div class="row text-center">
-                             <div class="col crop mt-3 mb-3">
+          <div class="container testimonial-group">
+            <p><?php echo $sample[1] ?></p>
+            <div class="row text-center">
+              <div class="col crop mt-3 mb-3"></div>
+            </div>
+          </div>
 
-
-                             </div>
-                         </div>
-                     </div>
-
-                 <?php }
+          <?php }
 
                     ?>
+        </div>
+      </div>
+    </div>
 
-             </div>
-         </div>
-     </div>
+    <!-- parallax -->
+    <div class="parallax game-parallax">
+      <div class="col" style="height: 100%">
+        <div id="overlay">
+          <div id="text">
+            <h1
+              class="pl-2 pr-2"
+              style="
+                border-left: 2px solid white;
+                border-right: 2px solid white;
+              "
+              id=""
+            >
+              Game
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
 
-     <!-- parallax -->
-     <div class="parallax game-parallax">
-         <div class="col" style="height:100%">
-             <div id="overlay">
+    <!-- parallax -->
+    <div class="container spacelah">
+      <div class="row" style="vertical-align: middle">
+        <div class="col-md-6">
+          <div class="thumbnail">
+            <a href="picts/porto/game/guitar.jpg">
+              <img
+                src="picts/porto/game/guitar.jpg"
+                alt="Lights"
+                style="width: 100%"
+              />
+              <div class="caption">
+                <p><center>Guitar VR-Myo Learn</center></p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="thumbnail">
+            <a href="picts/porto/game/sabilman.jpg">
+              <img
+                src="picts/porto/game/sabilman.jpg"
+                alt="Nature"
+                style="width: 100%"
+              />
+              <div class="caption">
+                <p><center>Sabilman</center></p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-                 <div id="text">
-                     <h1 class="pl-2 pr-2" style="border-left: 2px solid white; border-right: 2px solid white;" id="">Game
-                     </h1>
+    <div class="samples" id="samples">
+      <div class="isi" class="">
+        <div class="isi-header">
+          <div class="isi-konten-samples"></div>
+          <script>
+            game.forEach(printDOM);
+          </script>
+          <?php foreach ($game as $sample) { ?>
 
-                 </div>
-             </div>
-
-
-         </div>
-     </div>
-
-     <!-- parallax -->
-     <div class="container spacelah">
-         <div class="row" style="vertical-align: middle;">
-             <div class="col-md-6">
-                 <div class="thumbnail">
-                     <a href="picts/porto/game/guitar.jpg">
-                         <img src="picts/porto/game/guitar.jpg" alt="Lights" style="width:100%">
-                         <div class="caption">
-                             <p><center>Guitar VR-Myo Learn</center></p>
-                         </div>
-                     </a>
-                 </div>
-             </div>
-             <div class="col-md-6">
-                 <div class="thumbnail">
-                     <a href="picts/porto/game/sabilman.jpg">
-                         <img src="picts/porto/game/sabilman.jpg" alt="Nature" style="width:100%">
-                         <div class="caption">
-                             <p><center>Sabilman</center></p>
-                         </div>
-                     </a>
-                 </div>
-             </div>
-         </div>
-     </div>
-
-     <div class="samples" id="samples">
-         <div class="isi" class="">
-             <div class="isi-header">
-                 <div class="isi-konten-samples"></div>
-                 <script>
-                    game.forEach(printDOM)
-                 </script>
-                 <?php foreach ($game as $sample) { ?>
-
-                     <div>
-                         <h4>
-                             <?php
+          <div>
+            <h4>
+              <?php
                                 echo $sample[0]; ?>
-                         </h4>
-                     </div>
+            </h4>
+          </div>
 
-                     <div class="container testimonial-group">
-                     <p><?php echo $sample[1] ?></p>
-                         <div class="row text-center">
-                             <div class="col crop mt-3 mb-3">
+          <div class="container testimonial-group">
+            <p><?php echo $sample[1] ?></p>
+            <div class="row text-center">
+              <div class="col crop mt-3 mb-3"></div>
+            </div>
+          </div>
 
-
-                             </div>
-                         </div>
-                     </div>
-
-                 <?php }
+          <?php }
 
                     ?>
+        </div>
+      </div>
+    </div>
 
-             </div>
-         </div>
-     </div>
 
-     
+    <!-- parallax -->
+    <div class="parallax microcontroller-parallax">
+        <div class="col" style="height: 100%">
+          <div id="overlay">
+            <div id="text">
+              <h1
+                class="pl-2 pr-2"
+                style="
+                  border-left: 2px solid white;
+                  border-right: 2px solid white;
+                "
+                id=""
+              >
+                Mikrokontroller
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- parallax -->
+      <div class="container spacelah">
+        <div class="row" style="vertical-align: middle">
+          <div class="col-md-6">
+            <div class="thumbnail">
+              <a href="picts/porto/microcontroller/RFIDHelm.jpg">
+                <img
+                  src="picts/porto/microcontroller/RFIDHelm.jpg"
+                  alt="Lights"
+                  style="width: 100%"
+                />
+                <div class="caption">
+                  <p><center>RFIDHelmDetection</center></p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="thumbnail">
+              <a href="picts/porto/microcontroller/SolarCell.jpg">
+                <img
+                  src="picts/porto/microcontroller/SolarCell.jpg"
+                  alt="Nature"
+                  style="width: 100%"
+                />
+                <div class="caption">
+                  <p><center>MPPT Solar Cell</center></p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="samples" id="samples">
+        <div class="isi" class="">
+          <div class="isi-header">
+            <div class="isi-konten-samples"></div>
+            <script>
+              microcontroller.forEach(printDOM);
+            </script>
+            <?php foreach ($game as $sample) { ?>
+  
+            <div>
+              <h4>
+                <?php
+                                  echo $sample[0]; ?>
+              </h4>
+            </div>
+  
+            <div class="container testimonial-group">
+              <p><?php echo $sample[1] ?></p>
+              <div class="row text-center">
+                <div class="col crop mt-3 mb-3"></div>
+              </div>
+            </div>
+  
+            <?php }
+  
+                      ?>
+          </div>
+        </div>
+      </div>
 
- </body>
+  </body>
 
- <footer id="footer" class="text-center">
-     Copyright 2022 &copy; XNdrive (me)
- </footer>
-
- </html>
+  <footer id="footer" class="text-center">
+    Copyright 2022 &copy; XNdrive (me)
+  </footer>
+</html>

@@ -162,6 +162,10 @@ html {
     background-image: url("picts/porto/game-header.png");
     height: 500px;
 }
+.microcontroller-parallax {
+    background-image: url("picts/porto/mikrokontroller-header.jpg");
+    height: 500px;
+}
 .web-parallax {
     background-image: url("picts/porto/web-header.png");
     height: 500px;
